@@ -34,7 +34,7 @@ const HomePage = () => {
         <h1 className="text-xm  md:text-5xl lg:text-6xl font-bold text-indigo-100 leading-tight mb-6">
           Welcome to Christ Worship Center International
         </h1>
-        <p className="text-base text-left sm:text-lg md:text-xl text-gray-300 mb-8">
+        <p className="text-base text-sm text-left sm:text-lg md:text-xl text-gray-300 mb-8">
           We are more than a church — we are a vibrant community rooted in love, worship, and outreach. With hearts wide open and arms extended, we welcome all people into a life-transforming encounter with Jesus Christ. Our vision is to see lives changed, hope restored, and communities renewed through the power of God's presence and the warmth of family.
         </p>
         <div className="flex flex-col mt-6 items-start gap-6 ml-0">
