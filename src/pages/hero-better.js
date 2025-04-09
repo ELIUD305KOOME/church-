@@ -15,7 +15,7 @@ const images = [
 
 const Slide = ({ image, title, name, description }) => (
   <div
-    className="absolute top-1/2 left-1/2 w-full h-full bg-cover bg-center transition-all duration-1000 ease-in-out rounded-2xl shadow-2xl"
+    className="absolute top-1/2 left-1/2 w-full h-full bg-cover bg-center transition-all duration-1000 ease-in-out  shadow-2xl"
     style={{ backgroundImage: `url(${image})`, transform: 'translate(-50%, -50%)' }}
   >
     <div className="absolute top-1/2 left-28 transform -translate-y-1/2 w-96 text-white">
@@ -66,16 +66,16 @@ const Carousel = () => {
           image={items[0]}
           title="Gallery"
           name={slideDescriptions[images.indexOf(items[0])]}
-          description="We are more than a church — we are a vibrant community rooted in love, worship, and outreach. With hearts wide open and arms extended, we welcome all people into a life-transforming encounter with Jesus Christ. Our vision is to see lives changed, hope restored, and communities renewed through the power of God's presence and the warmth of family."
+        //   description="We are more than a church — we are a vibrant community rooted in love, worship, and outreach. With hearts wide open and arms extended, we welcome all people into a life-transforming encounter with Jesus Christ. Our vision is to see lives changed, hope restored, and communities renewed through the power of God's presence and the warmth of family."
         />
       </div>
 
       {/* Arrows */}
       <div className="absolute top-1/2 left-4 z-20 transform -translate-y-1/2">
-        <button onClick={() => rotate('prev')} className="bg-white text-purple-800 px-4 py-2 rounded-full shadow">{'<'}</button>
+        <button onClick={() => rotate('prev')} className="bg-white text-purple-800 px-4 py-2 shadow">{'<'}</button>
       </div>
       <div className="absolute top-1/2 right-4 z-20 transform -translate-y-1/2">
-        <button onClick={() => rotate('next')} className="bg-white text-black px-4 py-2 rounded-full shadow">{'>'}</button>
+        <button onClick={() => rotate('next')} className="bg-white text-black px-4 py-2  shadow">{'>'}</button>
       </div>
 
       {/* Progress bar animation */}

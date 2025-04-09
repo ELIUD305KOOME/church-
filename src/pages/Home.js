@@ -31,7 +31,7 @@ const HomePage = () => {
     <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
       {/* Text Content */}
       <div className=" lg:text-left flex-1">
-        <h1 className="text-3xl sm:text-4xl  md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+        <h1 className="text-xm  md:text-5xl lg:text-6xl font-bold text-indigo-100 leading-tight mb-6">
           Welcome to Christ Worship Center International
         </h1>
         <p className="text-base text-left sm:text-lg md:text-xl text-gray-300 mb-8">
