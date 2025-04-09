@@ -1,0 +1,12 @@
+@keyframes slide {
+    0% {
+      transform: translateX(0); /* Start position */
+    }
+    100% {
+      transform: translateX(-50%); /* End position (half the width of the duplicated images) */
+    }
+  }
+  
+  .animate-slide {
+    animation: slide 20s linear infinite; /* Remove "infinite" to stop after one cycle */
+  }
