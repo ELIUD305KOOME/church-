@@ -42,7 +42,7 @@ const HomePage = () => {
     href="https://chat.whatsapp.com/your-group-link"  // Replace with your actual WhatsApp group link
     target="_blank"
     rel="noopener noreferrer"
-    className="inline-block mt-0 w-24 sm:w-32 md:w-40 text-xs sm:text-sm md:text-base border-4 border-rose-400 hover:bg-violet-800 hover:text-white text-blue-900 font-medium py-2 px-4  shadow transition duration-300 transform "
+    className="inline-block mt-0 w-24 sm:w-32 md:w-40 text-xs sm:text-sm md:text-base border-4 border-rose-800 hover:bg-violet-800 hover:text-white text-blue-900 font-medium py-2 px-4  shadow transition duration-300 transform "
   >
     Join Us
   </a>
@@ -52,16 +52,16 @@ const HomePage = () => {
       </div>
 
       {/* Big Logo Text */}
-      <div className="flex-1 block sm:mt-12 relative w-full h-48 sm:h-56 md:h-64 lg:h-auto">
-        <div
-          className="absolute inset-0 flex items-center justify-center"
-          style={{
-            WebkitTextStroke: "2px #fff",
-            fontSize: "10rem",
-            fontFamily: "'Roboto', sans-serif",
-            fontWeight: "bold",
-            color: "rgba(255, 255, 255, 0.1)",
-            textShadow:
+      <div className="flex-1 hidden md:block relative">
+              <div
+                className="absolute inset-0 flex items-center justify-center"
+                style={{
+                  WebkitTextStroke: "2px #fff", 
+                  fontSize: "13rem", // Adjust size as needed
+                  fontFamily: "'Roboto', sans-serif", // Modern font
+                  fontWeight: "bold",
+                  color: "rgba(255, 255, 255, 0.1)", // Subtle base color
+                  textShadow:
               "0px 10px 20px rgba(50, 11, 148, 0.8), 0px 20px 40px rgba(76, 87, 243, 0.6), 0px 30px 60px rgba(138, 156, 244, 0.4)",
           }}
         >

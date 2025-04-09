@@ -14,21 +14,21 @@ const images = [
 ];
 
 const Slide = ({ image, title, name, description }) => (
-  <div
-    className="absolute top-1/2 left-1/2 w-full h-full bg-cover bg-center transition-all duration-1000 ease-in-out  shadow-2xl"
-    style={{ backgroundImage: `url(${image})`, transform: 'translate(-50%, -50%)' }}
-  >
-    <div className="absolute top-1/2 left-28 transform -translate-y-1/2 w-96 text-white">
-      <div className="text-3xl font-bold">{title}</div>
-      <div className="text-xl mt-1 font-semibold">{name}</div>
-      <p className="text-sm mt-2">{description}</p>
-      <div className="mt-4 space-x-2">
-        {/* <button className="bg-green-500 text-white px-4 py-2 rounded">join us</button>
-        <button className="bg-white text-green-500 px-4 py-2 rounded">our-whatsapp-group</button> */}
+    <div
+      className="absolute top-1/2 left-1/2 w-full h-full bg-cover bg-center transition-all duration-1000 ease-in-out  shadow-2xl"
+      style={{ backgroundImage: `url(${image})`, transform: 'translate(-50%, -50%)' }}
+    >
+      <div className="absolute top-1/2 left-28 transform -translate-y-1/2 w-96 text-white">
+        <div className="text-3xl text-rose-600 font-bold">{title}</div>
+        <div className="text-xl mt-1 font-semibold">{name}</div>
+        <p className="text-sm mt-2">{description}</p>
+        <div className="mt-4 space-x-2">
+          {/* <button className="bg-green-500 text-white px-4 py-2 rounded">join us</button>
+          <button className="bg-white text-green-500 px-4 py-2 rounded">our-whatsapp-group</button> */}
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
 
 const Carousel = () => {
   const [items, setItems] = useState(images);
@@ -61,7 +61,7 @@ const Carousel = () => {
 
   return (
     <div className="relative w-full h-screen overflow-hidden bg-black">
-      <div className="absolute inset-0 z-10">
+      <div className="absolute  inset-0 z-10">
         <Slide
           image={items[0]}
           title="Gallery"

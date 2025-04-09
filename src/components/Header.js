@@ -120,7 +120,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white/90 backdrop-blur-md shadow-lg p-4 flex flex-col space-y-2 mt-2">
+        <div className="md:hidden bg-violet/90 backdrop-blur-md shadow-lg p-4 flex flex-col space-y-2 mt-2">
           {navItems.map((item, index) => (
             <div key={index}>
               {item.subItems ? (
