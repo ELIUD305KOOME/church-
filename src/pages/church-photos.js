@@ -36,7 +36,7 @@ const ImageSlider = () => {
       </div>
 
       {/* About Us Section */}
-<div className="max-w-5xl mx-auto mt-[100px] bg-white shadow-lg  overflow-hidden mb-[200px] p-6 sm:p-10">
+<div className="max-w-5xl mx-auto mt-[50px] bg-white shadow-lg  overflow-hidden mb-[50px] p-6 sm:p-10">
   <div className="flex flex-col   md:flex-row items-center md:items-start gap-6">
     
     {/* Rounded Image */}
