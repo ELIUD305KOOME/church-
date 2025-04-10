@@ -13,7 +13,7 @@ const Map = () => {
       {/* Black overlay with backdrop blur */}
       <div className="absolute inset-0 bg-black opacity-50 backdrop-blur-sm z-0"></div>
 
-      <div className="max-w-lg mx-auto p-6 bg-transparent border border-purple-200 rounded-lg shadow-lg text-center">
+      <div className="max-w-lg mx-auto p-6 bg-transparent border border-purple-200  shadow-lg text-center">
     <h2 className="text-sm font-bold text-white relative mb-4">The Impact of Christ Worship Center International</h2>
     <p className="text-xs text-gray-50 mb-6">
         We are more than a church — we are a vibrant community rooted in love,
