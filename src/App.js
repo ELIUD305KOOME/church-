@@ -6,6 +6,8 @@ import Footer from './components/Footer';
 import Loader from './pages/loader'; // Loader with visuals
 import './App.css';
 import Depart from './pages/departments'
+import Watch from './pages/watch-us'
+
 
 const HomePage = lazy(() => import('./pages/Home'));
 
@@ -30,6 +32,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/ministries" element={<Depart />} />
+          <Route path="/Watch-Online" element={<Watch />} />
         </Routes>
       </Suspense>
       <Footer />
