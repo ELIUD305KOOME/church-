@@ -61,7 +61,7 @@ const Header = () => {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-gradient-to-b dark:from-gray-900/60 dark:via-gray-700/40 dark:to-transparent backdrop-blur-lg shadow-md px-4 py-3 lg:px-8 lg:py-4">
+    <header className="sticky top-0 z-50 w-full bg-gradient-to-b dark:from-purple-900/60 dark:via-gray-700/40 dark:to-transparent backdrop-blur-lg shadow-md px-4 py-3 lg:px-8 lg:py-4">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center text-blue-900 font-extrabold text-2xl tracking-wide hover:text-blue-700 transition-colors duration-300">
           <img src="/church.png" alt="Logo" className="h-16 w-16 object-cover rounded-full border-2 border-blue-300 shadow-sm mr-3" />

@@ -21,7 +21,7 @@ const HomePage = () => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundAttachment: "fixed",
-    minHeight: "70vh",
+    minHeight: "50vh",
   }}
 > 
   {/* Overlay */}
@@ -56,7 +56,7 @@ const HomePage = () => {
               <div
                 className="absolute inset-0 flex items-center justify-center"
                 style={{
-                  WebkitTextStroke: "2px #fff", 
+                  WebkitTextStroke: "2px #fff",
                   fontSize: "13rem", // Adjust size as needed
                   fontFamily: "'Roboto', sans-serif", // Modern font
                   fontWeight: "bold",
