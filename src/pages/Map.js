@@ -17,7 +17,7 @@ const Map = () => {
     <h2 className="text-sm font-bold text-white relative mb-4">The Impact of Christ Worship Center International</h2>
     <p className="text-xs text-gray-50 mb-6">
         We are more than a church — we are a vibrant community rooted in love,
-        worship, and outreach. With hearts wide open and arms extended, we welcome all people 
+        worship, and outreach. With hearts wide open and arms extended, we welcome all people
         into a life-transforming encounter with Jesus Christ. Our vision is to see lives changed,
         hope restored, and communities renewed through the power of God's presence and the warmth
         of family.
