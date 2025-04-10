@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Loader from './pages/loader'; // Loader with visuals
 import './App.css';
+import Depart from './pages/departments'
 
 const HomePage = lazy(() => import('./pages/Home'));
 
@@ -28,6 +29,7 @@ const App = () => {
       <Suspense fallback={<div className="loading"><Loader /></div>}>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/ministries" element={<Depart />} />
         </Routes>
       </Suspense>
       <Footer />
