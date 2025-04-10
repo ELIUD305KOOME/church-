@@ -46,5 +46,17 @@ import {
       backgroundImage: "/youth.jpg",
       icon: FaChild,
     },
+    {
+      title: "",
+      content: "",
+      backgroundImage: "/fri.jpeg",
+      icon: FaChurch,
+    },
+    {
+      title: "",
+      content: "",
+      backgroundImage: "/wedn.jpeg",
+      icon: FaGlobeAmericas,
+    },
   ];
   
