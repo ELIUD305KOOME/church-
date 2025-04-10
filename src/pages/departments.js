@@ -15,12 +15,12 @@ const departments = [
   },
   {
     name: "Children",
-    image: "/image-100.jpg",
+    image: "/youth.jpg",
     whatsappLink: "https://chat.whatsapp.com/MarketingGroupLink",
   },
   {
     name: "Women",
-    image: "/image-100.jpg",
+    image: "/womens-.jpg",
     whatsappLink: "https://chat.whatsapp.com/FinanceGroupLink",
   },
   {
@@ -38,7 +38,7 @@ const DepartmentGrid = () => {
       </h1>
 
       {/* Responsive Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 px-4 w-full  mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 px-4 lg:w-[900px]  mx-auto">
         {departments.map((dept, index) => (
           <div
             key={index}
