@@ -82,10 +82,10 @@ const HomePage = () => {
 
           {/* Content Layer */}
           <div className="relative">
-            <p className="text-lg md:text-xl font-semibold text-blue-800 mb-2">
+            <p className="text-lg md:text-xl font-semibold text-blue-200 mb-2">
             A Church without boundaries
             </p>
-            <p className="text-base md:text-lg text-gray-600">
+            <p className="text-sm md:text-lg text-rose-400">
             where everybody is somebody.
             </p>
           </div>

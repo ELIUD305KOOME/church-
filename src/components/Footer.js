@@ -10,7 +10,7 @@ const Footer = () => {
 
           {/* Column 1: About the Church */}
           <div className="w-full md:w-1/4">
-            <h3 className="text-sm font-bold mb-4">About Christ Worship Center</h3>
+            <h3 className="text-xs font-bold mb-4">About Christ Worship Center</h3>
             <p className="text-xs leading-relaxed">
               Christ Worship Center International is a vibrant, spirit-led church committed to preaching the Gospel of Jesus Christ, transforming lives through prayer, worship, and the Word of God. Join us as we grow in faith and reach out to the world.
             </p>
