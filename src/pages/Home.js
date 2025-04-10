@@ -74,7 +74,7 @@ const HomePage = () => {
 
 
 
-      <div className="flex flex-col bg-violet-800 md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 py-8 bg-gray-100  shadow-md">
+      <div className="flex flex-col bg-black md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 py-8   shadow-md">
         {/* Text Section */}
         <div className="text-left max-w-md md:w-1/2 p-4 rounded-lg relative overflow-hidden">
           {/* Background Layer */}
@@ -82,7 +82,7 @@ const HomePage = () => {
 
           {/* Content Layer */}
           <div className="relative">
-            <p className="text-lg md:text-xl font-semibold text-black-800 mb-2">
+            <p className="text-lg md:text-xl font-semibold text-blue-800 mb-2">
             A Church without boundaries
             </p>
             <p className="text-sm md:text-lg text-blue-800">
