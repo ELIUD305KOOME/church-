@@ -51,7 +51,7 @@ const ImageSlider = () => {
       <h2 className="text-sm md:text-3xl font-bold text-gray-800 mb-4">
         Resident Pastor, Christ Worship Center International
       </h2>
-      <p className="text-xs md:text-lg text-purple-700 leading-relaxed">
+      <p className="text-xs text-left md:text-lg text-purple-700 leading-relaxed">
         is the visionary leader and heart behind Christ Worship Center International. With a passion for worship and a deep calling to nurture a spiritually empowered community, she founded the ministry with a single mission — to draw hearts back to God through uncompromised worship and the Word.
       </p>
     </div>
