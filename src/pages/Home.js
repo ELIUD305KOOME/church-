@@ -106,7 +106,7 @@ const HomePage = () => {
 
       <Map />
       <ImageSlider/>
-      <Carousel/>
+      {/* <Carousel/> */}
     </div>
   );
 };
