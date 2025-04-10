@@ -52,7 +52,7 @@ const Header = () => {
               key={index}
               to={item.path}
               onClick={() => setIsOpen(false)}
-              className="text-gray-800 hover:text-blue-600 py-2 block"
+              className="text-indigo-100 hover:text-blue-600 py-2 block"
             >
               {item.name}
             </Link>
