@@ -10,7 +10,7 @@ const departments = [
   },
   {
     name: "Intercessory",
-    image: "/image-100.jpg",
+    image: "/sunday.jpeg",
     whatsappLink: "https://chat.whatsapp.com/ITGroupLink",
   },
   {

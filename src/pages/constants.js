@@ -23,15 +23,15 @@ import {
   
   export const ServiceData = [
     {
-      title: "Sunday-10:00 AM ",
+      title: " ",
       content: "Join our vibrant Sunday services filled with powerful worship, teachings, and fellowship.",
-      backgroundImage: "/inservice.jpg",
+      backgroundImage: "/sunday.jpeg",
       icon: FaCross,
     },
     {
       title: "Bible Study-wednesday-7:30 PM",
       content: "Deepen your understanding of God’s Word through our weekly Bible study sessions.",
-      backgroundImage: "/kom.jpg",
+      backgroundImage: "/inservice.jpg",
       icon: FaBible,
     },
     {

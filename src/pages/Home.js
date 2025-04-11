@@ -8,6 +8,7 @@ import ImageSlider from "./church-photos"
 import OurServices from "./church-services"
 import ActiveSlider from "./church-data"
 import Carousel from "./hero-better"
+import Maping from './maping'
 
 const HomePage = () => {
   return (
@@ -107,6 +108,7 @@ const HomePage = () => {
       <Map />
       <ImageSlider/>
       {/* <Carousel/> */}
+      <Maping/>
     </div>
   );
 };
