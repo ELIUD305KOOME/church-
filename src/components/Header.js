@@ -7,7 +7,7 @@ const navItems = [
   { name: 'Ministries', path: '/ministries' },
   { name: 'Watch-Online', path: '/Watch-Online' },
   // { name: 'Get Involved', path: '/get-involved' },
-  { name: 'Contact Us', path: '/Contact-Us' },
+  // { name: 'Contact Us', path: '/Contact-Us' },
   { name: 'Social Media', path: '/social-media' },
 ];
 

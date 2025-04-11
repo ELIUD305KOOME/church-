@@ -7,6 +7,7 @@ import Loader from './pages/loader'; // Loader with visuals
 import './App.css';
 import Depart from './pages/departments'
 import Watch from './pages/watch-us'
+import SocialMediaPage from "./pages/SocialMediaPage";
 
 
 const HomePage = lazy(() => import('./pages/Home'));
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/ministries" element={<Depart />} />
           <Route path="/Watch-Online" element={<Watch />} />
+          <Route path="/social-media" element={<SocialMediaPage />} />
         </Routes>
       </Suspense>
       <Footer />
