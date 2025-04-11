@@ -18,8 +18,8 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full bg-violet-900 backdrop-blur-lg shadow-md px-4 py-3 lg:px-8 lg:py-4">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="flex items-center text-blue-900 font-extrabold text-2xl tracking-wide hover:text-blue-700 transition-colors duration-300">
-          <img src="/church.png" alt="Logo" className="h-16 w-16 object-cover rounded-full shadow-sm mr-3" />
+        <Link to="/" className="flex items-center text-blue-100 font-extrabold text-2xl tracking-wide hover:text-blue-100 transition-colors duration-300">
+          <img src="/church.png" alt="Logo" className="h-16 w-16 text-blue-100 object-cover rounded-full shadow-sm mr-3" />
           CWCIntl
         </Link>
 

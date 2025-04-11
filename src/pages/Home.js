@@ -79,14 +79,14 @@ const HomePage = () => {
         {/* Text Section */}
         <div className="text-left max-w-md md:w-1/2 p-4 rounded-lg relative overflow-hidden">
           {/* Background Layer */}
-          <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-white transform -skew-y-[20deg]"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-700 to-green transform -skew-y-[20deg]"></div>
 
           {/* Content Layer */}
           <div className="relative">
-            <p className="text-lg md:text-xl font-semibold text-blue-800 mb-2">
+            <p className="text-lg md:text-xl font-semibold text-blue-100 mb-2">
             A Church without boundaries
             </p>
-            <p className="text-sm md:text-lg text-blue-800">
+            <p className="text-sm md:text-lg text-blue-100">
             where everybody is somebody.
             </p>
           </div>
