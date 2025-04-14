@@ -4,27 +4,27 @@ import { RxArrowTopRight } from "react-icons/rx";
 // Sample data for departments
 const departments = [
   {
-    name: "Praise and Worship",
+    name: "Praise and Worship Department",
     image: "/sunday-worship.jpg",
     whatsappLink: "https://chat.whatsapp.com/HRGroupLink",
   },
   {
-    name: "Intercessory",
+    name: "Intercessory Department",
     image: "/sunday.jpeg",
     whatsappLink: "https://chat.whatsapp.com/ITGroupLink",
   },
   {
-    name: "Children",
+    name: "Children Department",
     image: "/youth.jpg",
     whatsappLink: "https://chat.whatsapp.com/MarketingGroupLink",
   },
   {
-    name: "Women",
+    name: "Women Department",
     image: "/womens-.jpg",
     whatsappLink: "https://chat.whatsapp.com/FinanceGroupLink",
   },
   {
-    name: "Men’s Ministry",
+    name: "Men’s Ministry Department",
     image: "/image-100.jpg",
     whatsappLink: "https://chat.whatsapp.com/MarketingGroupLink",
   },
