@@ -24,7 +24,7 @@ const departments = [
     whatsappLink: "https://chat.whatsapp.com/FinanceGroupLink",
   },
   {
-    name: "Men’s Ministry Department",
+    name: "Men’s Department",
     image: "/image-100.jpg",
     whatsappLink: "https://chat.whatsapp.com/MarketingGroupLink",
   },
