@@ -1,4 +1,12 @@
 import React from "react";
+import { motion } from 'framer-motion';
+
+const springTransition = (delay = 0) => ({
+  type: "spring",
+  stiffness: 80,
+  damping: 12,
+  delay,
+});
 
 const Card = () => {
   return (
@@ -17,14 +25,18 @@ const Card = () => {
         {/* Medium image */}
         <div className="relative">
           {/* Medium-sized image */}
-          <img
+          <motion.img
             src="/pattern.jpg"
             alt="Medium"
             className="mx-auto w-[600px] h-auto shadow-lg rounded-lg"
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -60 }}
+            transition={springTransition(0.2)}
             onError={(e) => {
-              e.target.src = "/fallback-pattern.jpg"; // Fallback image in case of error
+              e.target.src = "/fallback-pattern.jpg";
             }}
           />
+
 
           {/* Smaller image overlapping bottom */}
           <img

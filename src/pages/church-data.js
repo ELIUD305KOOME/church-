@@ -6,10 +6,20 @@ import "swiper/css/free-mode";
 import { FreeMode, Pagination } from "swiper/modules";
 import { RxArrowTopRight } from "react-icons/rx";
 import { ServiceData } from "./constants";
+import { motion } from 'framer-motion';
+
+
+const springTransition = (delay = 0) => ({
+  type: "spring",
+  stiffness: 80,
+  damping: 12,
+  delay,
+});
 
 const ActiveSlider = () => {
   return (
-    <div className="flex items-center justify-center flex-col bg-black w-full overflow-x-auto">
+    <div className="flex items-center justify-center flex-col bg-black w-full overflow-x-auto"
+    >
       <Swiper
         breakpoints={{
           340: {
@@ -30,7 +40,11 @@ const ActiveSlider = () => {
       >
         {ServiceData.map((item) => (
           <SwiperSlide key={item.title}>
-            <div className="flex flex-col gap-6 mb-20 group relative shadow-lg text-white  px-6 py-8 h-[250px] w-[150px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer">
+            <motion.div className="flex flex-col gap-6 mb-20 group relative shadow-lg text-white  px-6 py-8 h-[250px] w-[150px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer"
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: 60 }}
+            transition={springTransition(0.2)}
+            >
               <div
                 className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: `url(${item.backgroundImage})` }}
@@ -42,7 +56,7 @@ const ActiveSlider = () => {
                 {/* <p className="lg:text-[18px] text-purple-400">{item.content}</p> */}
               </div>
               <RxArrowTopRight className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white group-hover:text-blue-500 group-hover:rotate-45 duration-100" />
-            </div>
+              </motion.div>
           </SwiperSlide>
         ))}
       </Swiper>

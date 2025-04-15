@@ -2,7 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTiktok, faWhatsapp, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { motion } from 'framer-motion';
 
+const springTransition = (delay = 0) => ({
+  type: "spring",
+  stiffness: 80,
+  damping: 12,
+  delay,
+});
 
 const WatchUsLive = () => {
   return (
@@ -12,18 +19,26 @@ const WatchUsLive = () => {
         {/* Image Section */}
         <div className="flex flex-col">
           {/* Main Display Image */}
-          <div className="border w-90 overflow-hidden">
+          <motion.div className="border w-90 overflow-hidden"
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -80 }}
+          transition={springTransition(0.2)}
+          >
             <img
               src="/live--.jpg"
               alt="Live Stream Preview"
               className="w-full h-96 object-cover hover:scale-105 transition-transform duration-300"
             />
-          </div>
+          </motion.div>
         </div>
 
         {/* Live Stream Details Section */}
         {/* Live Stream Details Section */}
-<div className="text-center">
+   <motion.div className="text-center"
+   whileInView={{ opacity: 1, x: 0 }}
+   initial={{ opacity: 0, x: 80 }}
+   transition={springTransition(0.2)}
+   >
   {/* Title */}
   <h1 className="text-4xl font-extrabold text-teal-100 mb-6">
     Watch Us Live
@@ -50,7 +65,7 @@ const WatchUsLive = () => {
     <FontAwesomeIcon icon={faYoutube} size="sm" className="mr-2" />
     Watch Now
   </a>
-</div>
+  </motion.div>
       </div>
     </div>
   );

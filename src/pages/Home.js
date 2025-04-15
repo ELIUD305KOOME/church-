@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 // import ServiceList from './ServiceList';
 // import ProductList from './ProductList'; // Ensure correct file name
 import AboutUs from './ReviewsPage';
@@ -7,9 +8,17 @@ import Card from './eliudcard';
 import ImageSlider from "./church-photos"
 import OurServices from "./church-services"
 import ActiveSlider from "./church-data"
-import Carousel from "./hero-better"
+// import Carousel from "./hero-better"
 import Maping from './maping'
 
+
+
+const springTransition = (delay = 0) => ({
+  type: "spring",
+  stiffness: 80,
+  damping: 12,
+  delay,
+});
 const HomePage = () => {
   return (
     <div className="relative w-full bg-blue-100 min-h-screen overflow-hidden">
@@ -31,7 +40,12 @@ const HomePage = () => {
   <div className="container mx-auto px-4 sm:px-6 md:px-8 max-w-7xl relative z-10">
     <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
       {/* Text Content */}
-      <div className=" lg:text-left flex-1">
+      <motion.div
+                    className="lg:text-left flex-1"
+                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, x: -60 }}
+                    transition={springTransition(0.2)}
+                  >
         <h1 className="text-xm  md:text-5xl lg:text-6xl font-bold text-indigo-100 leading-tight mb-6">
           Welcome to Christ Worship Center International
         </h1>
@@ -47,13 +61,16 @@ const HomePage = () => {
   >
     Join Us
   </a>
- </div>
-
-
-      </div>
+  </div>
+  </motion.div>
 
       {/* Big Logo Text */}
-      <div className="flex-1 hidden md:block relative">
+      <motion.div
+              className="flex-1 hidden md:block relative"
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 60 }}
+              transition={springTransition(0.2)}
+            >
               <div
                 className="absolute inset-0 flex items-center justify-center"
                 style={{
@@ -68,7 +85,7 @@ const HomePage = () => {
         >
           CWCI
         </div>
-      </div>
+      </motion.div>
     </div>
   </div>
 </section>
@@ -83,12 +100,22 @@ const HomePage = () => {
 
           {/* Content Layer */}
           <div className="relative">
-            <p className="text-lg md:text-xl font-semibold text-blue-100 mb-2">
+            <motion.p 
+            className="text-lg md:text-xl font-semibold text-blue-100 mb-2"
+            whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 60 }}
+              transition={springTransition(0.2)}
+            >
             A Church without boundaries
-            </p>
-            <p className="text-sm md:text-lg text-blue-100">
+            </motion.p>
+            <motion.p 
+            className="text-sm md:text-lg text-blue-100"
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -60 }}
+            transition={springTransition(0.2)}
+            >
             where everybody is somebody.
-            </p>
+            </motion.p>
           </div>
         </div>
 

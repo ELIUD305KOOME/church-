@@ -1,5 +1,12 @@
 import React from "react";
+import { motion } from 'framer-motion';
 
+const springTransition = (delay = 0) => ({
+  type: "spring",
+  stiffness: 80,
+  damping: 12,
+  delay,
+});
 const services = [
   {
     icon: "fas fa-user-graduate",
@@ -35,10 +42,19 @@ const OurServices = () => {
               <i
                 className={`${service.icon} text-indigo-600 text-4xl mb-4`}
               ></i>
-              <h3 className="text-xl font-semibold text-white mb-2">
+              <motion.h3 className="text-xl font-semibold text-white mb-2"
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -60 }}
+              transition={springTransition(0.2)}
+              >
                 {service.title}
-              </h3>
-              <p className="text-gray-300 text-sm">{service.description}</p>
+              </motion.h3>
+               <motion.p className="text-gray-300 text-sm"
+               whileInView={{ opacity: 1, x: 0 }}
+               initial={{ opacity: 0, x: 60 }}
+               transition={springTransition(0.2)}
+               >
+                {service.description} </motion.p>
             </div>
           ))}
         </div>
