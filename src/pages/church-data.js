@@ -43,7 +43,7 @@ const ActiveSlider = () => {
             <motion.div className="flex flex-col gap-6 mb-20 group relative shadow-lg text-white  px-6 py-8 h-[250px] w-[150px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer"
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 60 }}
-            transition={springTransition(0.2)}
+            transition={springTransition(0.05)}
             >
               <div
                 className="absolute inset-0 bg-cover bg-center"
