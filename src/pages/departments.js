@@ -41,7 +41,7 @@ const DepartmentGrid = () => {
   return (
     <div className="flex items-center justify-center flex-col w-full bg-black min-h-screen text-white">
       <h1 className="text-4xl font-bold text-center mb-10">
-        Our Departments
+        
       </h1>
 
       {/* Responsive Grid */}
